@@ -21,7 +21,7 @@ def load_dict(manName,listObj):
 		__Listings_Dictionary[manName] = listings
 
 
-# Parameters : product name, 3 proudct attributes : family,model,manufacturer
+# Parameters : product name, 3 product attributes : family,model,manufacturer
 # Description : This function searches the dictionary,"__Listings_Dictionary",firstly
 # by manufacturer name, to compare the product name of product objects from the products file,
 # to listings in the listings dictionary. If a match is found, the listing object is sent to
