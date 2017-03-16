@@ -1,0 +1,19 @@
+README
+
+Challenge : The goal is to match product listings from a 3rd party retailer, e.g. “Nikon D90 12.3MP Digital SLR Camera (Body Only)” against a set of known products, e.g. “Nikon D90”. The task is to match each listing from the "listings" file to the correct product from the "products" file.
+
+
+Input Files : listing.txt(20,000 listings,JSON), products.txt(700 products,JSON)
+
+
+Design Choice : 
+
+This program leverages memory by use of python dictionaries, for speed. The program makes an initial run through of the listings file to generate a dictionary of listings grouped by the manufacturer names of each listing. The prgram then runs through the products file and compares each unique product to its corresponding manunfacturer within the listings dictionary. If a match is found, the matched list is removed from the dictionary thus decreasing the time of successive matches for that manufufacturer. Matches are based on the product name, model and optional family name of the products, when compared to that of the listings. 
+
+
+Running
+
+To run file, navigate to rood directory and enter : python match.py
+The program generates a file called results.txt, which shows all the listings that have been matched with the products, in JSON format.
+
+
